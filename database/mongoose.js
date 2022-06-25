@@ -4,7 +4,7 @@ mongoose.Promise = global.Promise;
 
 mongoose.connect('mongodb://127.0.0.1:27017/taskmanagerdb', )
     .then(() => {console.log("DB Connected Sucessfully!")})
-    .catch((error) => {console.log(error)});
+    .catch((error) => {console.log("Error occured while DB connection",error)});
 
 /* 
 1. Okay! so the above block of code had a mongoose import
